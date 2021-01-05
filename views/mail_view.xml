@@ -1,0 +1,14 @@
+<odoo>
+
+	<record model="ir.ui.view" id="attachment_mail_tempmlate_view_form">
+		<field name="name">attachment.mail.template.form</field>
+		<field name="model">mail.template</field>
+		<field name="inherit_id" ref="mail.email_template_form"></field>
+		<field name="arch" type="xml">
+			<field name="scheduled_date" position="after">
+				<field name="allow_automatic_attachments" />
+			</field>
+		</field>
+	</record>
+
+</odoo>
